@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newboard"
+    android:backgroundTintMode="add"
+    android:orientation="vertical"
+    tools:context="com.example.abhishekpc.tictactoe.MainActivity">
+<TextView
+    android:id="@+id/infoofgame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3-Match Series"
+    android:layout_marginTop="25dp"
+    android:textColor="@android:color/background_light"
+    android:textSize="25dp"
+    android:textStyle="bold"
+    android:layout_marginLeft="25dp"/>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:tag="0"
+                android:onClick="imagetapped"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorAccent"></View>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:onClick="imagetapped"
+                android:tag="1"
+                app:srcCompat="@mipmap/ic_launcher" />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorAccent"></View>
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:tag="2"
+                android:onClick="imagetapped"
+                app:srcCompat="@mipmap/ic_launcher"
+         />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="5dp"
+            android:background="@color/colorAccent"></View>
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:tag="3"
+                android:onClick="imagetapped"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorAccent"></View>
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:tag="4"
+                android:onClick="imagetapped"
+                app:srcCompat="@mipmap/ic_launcher" />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorAccent"></View>
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:tag="5"
+                android:onClick="imagetapped"
+                app:srcCompat="@mipmap/ic_launcher" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="5dp"
+            android:background="@color/colorAccent"></View>
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:tag="6"
+                android:onClick="imagetapped"
+                app:srcCompat="@mipmap/ic_launcher" />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorAccent"></View>
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:tag="7"
+                android:onClick="imagetapped"
+                app:srcCompat="@mipmap/ic_launcher" />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorAccent"></View>
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:tag="8"
+                android:layout_weight="1"
+                android:onClick="imagetapped"
+                app:srcCompat="@mipmap/ic_launcher" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: "
+        android:textColor="@android:color/background_light"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textSize="35dp"
+        android:text="0"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/score1"/>
+    <View
+        android:background="@android:color/holo_blue_bright"
+        android:layout_width="3dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"></View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textSize="35dp"
+        android:textColor="@android:color/background_light"
+        android:text="0"
+        android:id="@+id/score2"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/playagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="15dp"
+        android:onClick="playagain"
+        android:text="@string/button"
+        android:background="@android:color/background_light"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:onClick="reset"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Reset"
+        android:background="@android:color/background_light"/>
+    </LinearLayout>
+</LinearLayout>
